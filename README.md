@@ -53,10 +53,12 @@ Secrets and Credential information
 ==================================
 
 **Capv manager bootstrap**
+
 Cluster API bootstrap provider Kubeadm (CABPK) is a component of Cluster API that is responsible of generating a cloud-init script to turn a Machine into a Kubernetes Node; this implementation uses kubeadm for kubernetes bootstrap.
 
 
 **Cloud Provider vSphere Credentials**
+
 Kubernetes(K8s) Cloud Providers are an interface to integrate various node (i.e. hosts), load balancers and networking routes. This interface allows extending K8s to use various cloud and virtualization solutions as a base infrastructure to run on.
 
 Kubernetes Cloud Providers provide the following interfaces to effectively integrate cloud platforms into Kubernetes:
@@ -65,7 +67,8 @@ Kubernetes Cloud Providers provide the following interfaces to effectively integ
 -	Routes - interface to add new routing rules of cloud platform
 -	Zones - integrate with zones if implemented by cloud platform
 
-CSI vSphere Config
+**CSI vSphere Config**
+
 Cloud Native Storage (CNS) provides comprehensive data management for stateful, containerized apps, enabling apps to survive restarts and outages. Stateful containers can use vSphere storage primitives such as standard volume, persistent volume, and dynamic provisioning, independent of VM and container lifecycle. 
 The vSphere Container Storage Interface (CSI) driver is what enables Kubernetes clusters running on vSphere to provision persistent volumes on vSphere storage. The CSI driver will utilize the secret in the kube-system namespace.
 
